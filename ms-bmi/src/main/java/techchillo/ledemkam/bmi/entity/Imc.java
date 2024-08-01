@@ -16,6 +16,14 @@ public class Imc {
     private int height;
     private LocalDateTime created_at;
 
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
+    }
+
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.DETACH})
     @JoinColumn(name = "account_id")
     private Account account;
@@ -70,8 +78,6 @@ public class Imc {
     public void setCreated_at(LocalDateTime created_at) {
         this.created_at = created_at;
     }
-
-
 
 
 

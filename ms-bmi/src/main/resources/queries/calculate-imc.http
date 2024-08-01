@@ -1,0 +1,12 @@
+POST http://localhost:8080/api/imc
+Content-Type: application/json
+
+{
+   "height": 160,
+   "weight": 60,
+   "account": {
+      "email": "ledemkam@outlook.de"
+   }
+}
+
+###

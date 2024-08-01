@@ -1,19 +1,19 @@
 package techchillo.ledemkam.bmi.dto;
 //dto stands for Data Transfer Object
-
+//dto sert à transférer des données entre les couches de l'application
 public class ImcDTO {
 
         private int weight;
         private int height;
-        private AccountDTO  accountDTO;
+        private AccountDTO account;
 
         public ImcDTO() {
         }
 
-        public ImcDTO(int weight, int height, AccountDTO accountDTO) {
+        public ImcDTO(int weight, int height, AccountDTO account) {
             this.weight = weight;
             this.height = height;
-            this.accountDTO = accountDTO;
+            this.account = account;
         }
 
     public int getWeight() {
@@ -32,11 +32,11 @@ public class ImcDTO {
         this.height = height;
     }
 
-    public AccountDTO getAccountDTO() {
-        return accountDTO;
+    public AccountDTO getAccount() {
+        return account;
     }
 
-    public void setAccountDTO(AccountDTO accountDTO) {
-        this.accountDTO = accountDTO;
+    public void setAccount(AccountDTO account) {
+        this.account = account;
     }
 }
